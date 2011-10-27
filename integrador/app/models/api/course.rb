@@ -3,7 +3,8 @@ class Api::Course < Api::Base
   def self.all(token)
     return [] if token.blank?
     request = get("/ei/courses", :query => { :token => token })
-    request["ei"]["cursos"]["curso"]
+    puts request
+    [(request["ei"]["cursos"] || {"curso" => []} )["curso"]].flatten
   end
   
   def self.show(token, course_id)

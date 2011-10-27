@@ -7,14 +7,13 @@ class SessionsController < ApplicationController
     if token.blank?
       redirect_to new_session_path, :alert => "Invalid credentials."
     else
-      session[:token]= token    
+      session[:token] = token
       redirect_to dashboard_path, :notice => "Welcome in, my friend!"
     end
   end
 
   def destroy
-    @session = Session.find(params[:id])
-    @session.destroy
-    redirect_to sessions_url, :notice => "Successfully destroyed session."
+    session.delete(:token)
+    redirect_to new_session_url, :notice => "Bye-bye! See you later."
   end
 end

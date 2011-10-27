@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.1.0'
+gem 'rails', '3.1.1'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
@@ -10,7 +10,7 @@ gem 'sqlite3'
 gem 'httparty'
 gem 'nifty-generators'
 gem 'rails-i18n'
-
+gem 'thin'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -21,6 +21,8 @@ group :assets do
 end
 
 gem 'jquery-rails'
+
+gem "therubyracer"
 
 # Use unicorn as the web server
 # gem 'unicorn'

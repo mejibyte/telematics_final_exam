@@ -12,6 +12,11 @@
       <% flash.each do |name, msg| %>
         <%= content_tag :div, msg, :id => "flash_#{name}" %>
       <% end %>
+      
+      <% if logged_in? %>
+        <%= link_to "Salida segura", session_path(:id => "user"), :method => :delete %>
+      <% end %>
+      
       <%= content_tag :h1, yield(:title) if show_title? %>
       <%= yield %>
     </div>
