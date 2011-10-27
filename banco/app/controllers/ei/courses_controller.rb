@@ -1,6 +1,6 @@
 class Ei::CoursesController < ApplicationController
   def index
-    render :xml => File.read(Rails.root.join("xml/ei/cursocontenidos.xml"))
+    render :xml => Course.xml_for_all_courses
   end
   
   def show
