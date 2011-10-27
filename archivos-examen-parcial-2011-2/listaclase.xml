@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ei>
+    <curso>
+        <codigo>st0263</codigo>
+        <grupo>031</grupo>
+        <estudiante>
+            <codigo>200910009010</codigo>
+            <nombre>Juan Esteban Perez</nombre>
+        </estudiante>
+        <estudiante>
+            <codigo>201010008010</codigo>
+            <nombre>Luis Javier Henao</nombre>
+        </estudiante>
+        
+        <!-- otros estudiantes -->
+    </curso>
+    <curso>
+        <codigo>st0260</codigo>
+        <grupo>032</grupo>
+        <estudiante>
+            <codigo>2008127504010</codigo>
+            <nombre>pedro esteban duarte</nombre>
+        </estudiante>
+        <estudiante>
+            <codigo>201027505010</codigo>
+            <nombre>Luis Javier tirado</nombre>
+        </estudiante>
+        
+        <!-- otros estudiantes -->
+    </curso>
+    
+    <curso>
+        <codigo>st0255</codigo>
+        <grupo>031</grupo>
+        <estudiante>
+            <codigo>2006127606010</codigo>
+            <nombre>juan camilo vargas</nombre>
+        </estudiante>
+        <estudiante>
+            <codigo>200627509010</codigo>
+            <nombre>monica correa</nombre>
+        </estudiante>
+        
+        <!-- otros estudiantes -->
+    </curso>
+    
+    <curso>
+        <codigo>st0910</codigo>
+        <grupo>032</grupo>
+        <estudiante>
+            <codigo>201127509010</codigo>
+            <nombre>blanca zuluaga</nombre>
+        </estudiante>
+        <estudiante>
+            <codigo>201127808010</codigo>
+            <nombre>pedro martinez</nombre>
+        </estudiante>
+        
+        <!-- otros estudiantes -->
+    </curso>
+    
+    <curso>
+        <codigo>st0278</codigo>
+        <grupo>031</grupo>
+        <estudiante>
+            <codigo>200910009010</codigo>
+            <nombre>Juan Esteban Perez</nombre>
+        </estudiante>
+        <estudiante>
+            <codigo>200220030010</codigo>
+            <nombre>pedro martinez</nombre>
+        </estudiante>
+        <estudiante>
+            <codigo>200245600910</codigo>
+            <nombre>esteban martinez</nombre>
+        </estudiante>
+        
+        <!-- otros estudiantes -->
+    </curso>
+    
+</ei>
+

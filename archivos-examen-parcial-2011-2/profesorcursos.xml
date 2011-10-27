@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ei>
+    <profesor>
+        <username>emontoya</username>
+        <cursos>
+            <curso>
+                <codigo>st0263</codigo>
+                <grupo>031</grupo>
+                <nombre>topicos especiales en telemática</nombre>
+            </curso>
+            <curso>
+                <codigo>st0260</codigo>
+                <grupo>032</grupo>
+                <nombre>seminario de ingeniería de sistemas</nombre>
+            </curso>
+        </cursos>
+    </profesor>
+    
+    <profesor>
+        <username>jcmontoy</username>
+        <cursos>
+            <curso>
+                <codigo>st0255</codigo>
+                <grupo>031</grupo>
+                <nombre>telematica</nombre>
+            </curso>
+            <curso>
+                <codigo>st0910</codigo>
+                <grupo>032</grupo>
+                <nombre>redes LANs</nombre>
+            </curso>
+        </cursos>
+    </profesor>
+    
+    <profesor>
+        <username>htrefftz</username>
+        <cursos>
+            <curso>
+                <codigo>st0278</codigo>
+                <grupo>031</grupo>
+                <nombre>computación gráfica</nombre>
+            </curso>
+        </cursos>
+    </profesor>
+        
+</ei>

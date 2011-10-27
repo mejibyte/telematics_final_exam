@@ -1,0 +1,2 @@
+module Ei::SessionsHelper
+end
