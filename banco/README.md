@@ -160,23 +160,23 @@ Programación Académica
  **Ejemplo:** 
  `curl 'http://localhost:3001/pa/courses/st0260/schedule?group=032&semester=20112'`
 
-   <?xml version="1.0" encoding="UTF-8"?>
-   <pa>
-     <programacion>
-       <codigo>st0260</codigo>
-       <grupo>032</grupo>
-       <evaluacion>
-         <tipo>parcial</tipo>
-         <porcentaje>70</porcentaje>
-         <fecha>2011-09-27</fecha>
-       </evaluacion>
-       <evaluacion>
-         <tipo>trabajo</tipo>
-         <porcentaje>30</porcentaje>
-         <fecha>2011-10-20</fecha>
-       </evaluacion>
-     </programacion>
-   </pa>
+    <?xml version="1.0" encoding="UTF-8"?>
+     <pa>
+       <programacion>
+         <codigo>st0260</codigo>
+         <grupo>032</grupo>
+         <evaluacion>
+           <tipo>parcial</tipo>
+           <porcentaje>70</porcentaje>
+           <fecha>2011-09-27</fecha>
+         </evaluacion>
+         <evaluacion>
+           <tipo>trabajo</tipo>
+           <porcentaje>30</porcentaje>
+           <fecha>2011-10-20</fecha>
+         </evaluacion>
+       </programacion>
+     </pa>
 
 
 
