@@ -100,7 +100,7 @@ Eafit Interactiva
     </ei>
   
   
-`curl http://localhost:3001/ei/courses/st0666`
+ `curl http://localhost:3001/ei/courses/st0666`
     
     <?xml version="1.0" encoding="UTF-8"?>
     <ei>
@@ -184,6 +184,8 @@ Admisiones y Registro
 -----------------
 
 * `String login(String username, String password)`
+
+ Exactamente igual al login en EAFIT Interactiva, sólo que la dirección es `POST http://host/ar/session`.
 
 * `String consultaEstudiantesPorNombre(String token, String patronNombre)`
 
