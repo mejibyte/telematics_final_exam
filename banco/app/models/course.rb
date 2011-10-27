@@ -14,7 +14,7 @@ class Course
   end
   
   def self.xml_for_all_courses(current_teacher)
-    courses = read_hash.map do |c| 
+    courses = read_hash.map do |c|
       { :codigo => c["codigo"], :nombre => c["nombre"], :grupo => groups_for_course(c["codigo"]) } if current_teacher.has_access_to_course?(c["codigo"])
     end.compact
     { :cursos => courses }.to_xml(XML_BUILDER_OPTIONS)
