@@ -73,7 +73,7 @@ Eafit Interactiva
  
 * `String getContenidosCursos(String token, String cursoId)`
 
-  Implementado en `GET http::/host/ei/courses/:id`. (`:id` debe reemplazarse por el código del grupo)
+  Implementado en `GET http://host/ei/courses/:id`. (`:id` debe reemplazarse por el código del grupo)
   
   **Ejemplo:**
   
