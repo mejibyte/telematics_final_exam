@@ -1,0 +1,7 @@
+<% title "Mis cursos" %>
+
+<ul>
+  <% @courses.each do |course| %>
+    <li><%= link_to "#{course["codigo"].upcase} - #{course["nombre"]} (Grupo #{course["grupo"]})", course_path(course["codigo"], :group => course["grupo"]) %></li>
+  <% end %>
+</ul>

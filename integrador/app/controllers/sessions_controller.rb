@@ -7,7 +7,8 @@ class SessionsController < ApplicationController
     if token.blank?
       redirect_to new_session_path, :alert => "Invalid credentials."
     else
-      redirect_to dashboard_path
+      session[:token]= token    
+      redirect_to dashboard_path, :notice => "Welcome in, my friend!"
     end
   end
 
