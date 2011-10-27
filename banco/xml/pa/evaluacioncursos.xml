@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pa>
+    <programacion>
+        <codigo>st0263</codigo>
+        <grupo>031</grupo>
+        <evaluacion>
+            <tipo>parcial</tipo>
+            <porcentaje>30</porcentaje>
+            <fecha>2011-10-27</fecha>
+        </evaluacion>
+        <evaluacion>
+            <tipo>trabajo</tipo>
+            <porcentaje>70</porcentaje>
+            <fecha>2011-11-20</fecha>
+        </evaluacion>
+    </programacion>
+    
+    <programacion>
+        <codigo>st0260</codigo>
+        <grupo>032</grupo>
+        <evaluacion>
+            <tipo>parcial</tipo>
+            <porcentaje>70</porcentaje>
+            <fecha>2011-09-27</fecha>
+        </evaluacion>
+        <evaluacion>
+            <tipo>trabajo</tipo>
+            <porcentaje>30</porcentaje>
+            <fecha>2011-10-20</fecha>
+        </evaluacion>
+    </programacion>
+    
+    <programacion>
+        <codigo>st0255</codigo>
+        <grupo>031</grupo>
+        <evaluacion>
+            <tipo>parcial</tipo>
+            <porcentaje>50</porcentaje>
+            <fecha>2011-08-27</fecha>
+        </evaluacion>
+        <evaluacion>
+            <tipo>parcial</tipo>
+            <porcentaje>50</porcentaje>
+            <fecha>2011-11-20</fecha>
+        </evaluacion>
+    </programacion>
+    
+    <programacion>
+        <codigo>st0910</codigo>
+        <grupo>032</grupo>
+        <evaluacion>
+            <tipo>parcial</tipo>
+            <porcentaje>50</porcentaje>
+            <fecha>2011-10-27</fecha>
+        </evaluacion>
+        <evaluacion>
+            <tipo>trabajo</tipo>
+            <porcentaje>50</porcentaje>
+            <fecha>2011-11-20</fecha>
+        </evaluacion>
+    </programacion>
+    
+    <programacion>
+        <codigo>st0278</codigo>
+        <grupo>031</grupo>
+        <evaluacion>
+            <tipo>trabajo final</tipo>
+            <porcentaje>30</porcentaje>
+            <fecha>2011-10-27</fecha>
+        </evaluacion>
+        <evaluacion>
+            <tipo>quices</tipo>
+            <porcentaje>70</porcentaje>
+            <fecha>2011-11-20</fecha>
+        </evaluacion>
+    </programacion>
+    
+</pa>
+

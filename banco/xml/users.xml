@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users>
+  <user>
+    <username>emontoya</username>
+    <password>12345</password>
+    <name>Edwin Montoya</name>
+    <token>we2345kjjka</token>
+  </user>
+  <user>
+    <username>jcmontoy</username>
+    <password>54321</password>
+    <name>Juan Carlos Montoya</name>
+    <token>123hhdj</token>
+  </user>
+
+  <user>
+    <username>htrefftz</username>
+    <password>45678</password>
+    <name>Helmuth Trefftz</name>
+    <token>dhashadjh</token>
+  </user>
+
+  <user>
+    <username>amejiap3</username>
+    <password>asdf</password>
+    <name>Andrés Mejía</name>
+    <token>r4nd0mn3ss</token>
+    </user>
+  </users>
