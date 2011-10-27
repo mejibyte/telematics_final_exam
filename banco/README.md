@@ -56,35 +56,18 @@ Eafit Interactiva
  
     <?xml version="1.0" encoding="UTF-8"?>
     <ei>
-     <curso>
-       <codigo>st0263</codigo>
-       <nombre>Topicos Especiales en Telematica</nombre>
-       <modulo>
-         <titulo>Presentación de Cliente/Servidor</titulo>
-         <descripcion>en esta presentación se dan los conceptos fundamentales en la arquitectura c/s</descripcion>
-         <url>http://interactiva.eafit.edu.co/we2345kjjka/link1</url>
-       </modulo>
-       <modulo>
-         <titulo>Presentación de P2P</titulo>
-         <descripcion>en esta presentación se dan los conceptos fundamentales en la arquitectura p2p </descripcion>
-         <url>http://interactiva.eafit.edu.co/we2345kjjka/link2</url>
-       </modulo>
-     </curso>
-
-     <curso>
-       <codigo>st0260</codigo>
-       <nombre>Seminario de Ingeniería de Sistemas</nombre>
-       <modulo>
-         <titulo>Introducción a Ingeniería de Sistemas</titulo>
-         <descripcion>conceptos fundamentales de ing de sistemas, introducción a la práctica profesional</descripcion>
-         <url>http://interactiva.eafit.edu.co/123343/link1</url>
-       </modulo>
-       <modulo>
-         <titulo>gestión basico de proyectos</titulo>
-         <descripcion>se introduce las técnicas princilaes de gestion de proyectos</descripcion>
-         <url>http://interactiva.eafit.edu.co/123343/link2</url>
-       </modulo>
-     </curso>
+      <cursos>
+        <curso>
+          <codigo>st0263</codigo>
+          <nombre>Topicos Especiales en Telematica</nombre>
+          <grupo>031</grupo>
+        </curso>
+        <curso>
+          <codigo>st0260</codigo>
+          <nombre>Seminario de Ingeniería de Sistemas</nombre>
+          <grupo>032</grupo>
+        </curso>
+      </cursos>
     </ei>
  
  
