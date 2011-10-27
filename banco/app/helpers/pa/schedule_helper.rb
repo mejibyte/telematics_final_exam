@@ -1,0 +1,2 @@
+module Pa::ScheduleHelper
+end

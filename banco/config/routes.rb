@@ -8,5 +8,8 @@ Banco::Application.routes.draw do
   
   namespace :pa do
     resource :session, :controller => "ei/sessions"
+    resources :courses do
+      resource :schedule
+    end
   end
 end

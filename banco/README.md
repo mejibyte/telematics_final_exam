@@ -149,8 +149,11 @@ Eafit Interactiva
 Programación Académica
 -----------------
 
-    String login(String username, String password)
-    String getProgramacion(String token, String cursoId, String grupo, String semestre)
+* `String login(String username, String password)`
+
+ Exactamente igual al login en EAFIT Interactiva, sólo que la dirección es `POST http://host/pa/session`.
+    
+* String getProgramacion(String token, String cursoId, String grupo, String semestre)
 
 Admisiones y Registro
 -----------------
