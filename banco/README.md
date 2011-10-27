@@ -71,7 +71,45 @@ Eafit Interactiva
     </ei>
  
  
-    String getContenidosCursos(String token, String cursoId)
+* `String getContenidosCursos(String token, String cursoId)`
+
+  Implementado en `GET http::/host/ei/courses/:id`. (`:id` debe reemplazarse por el código del grupo)
+  
+  **Ejemplo:**
+  
+  `curl http://localhost:3001/ei/courses/st0263`
+  
+  Respuesta:
+  
+    <?xml version="1.0" encoding="UTF-8"?>
+    <ei>
+      <curso>
+        <codigo>st0263</codigo>
+        <nombre>Topicos Especiales en Telematica</nombre>
+        <modulo>
+          <titulo>Presentación de Cliente/Servidor</titulo>
+          <descripcion>en esta presentación se dan los conceptos fundamentales en la arquitectura c/s</descripcion>
+          <url>http://interactiva.eafit.edu.co/we2345kjjka/link1</url>
+        </modulo>
+        <modulo>
+          <titulo>Presentación de P2P</titulo>
+          <descripcion>en esta presentación se dan los conceptos fundamentales en la arquitectura p2p </descripcion>
+          <url>http://interactiva.eafit.edu.co/we2345kjjka/link2</url>
+        </modulo>
+      </curso>
+    </ei>
+  
+  
+    `curl http://localhost:3001/ei/courses/st0666`
+    
+    <?xml version="1.0" encoding="UTF-8"?>
+    <ei>
+      <curso>
+        <status>error</status>
+        <mensaje>No existe un curso con el código 'st0666'</mensaje>
+      </curso>
+    </ei>
+  
     String getListaClase(String token, String cursoId, String grupo)
 
 Programación Académica

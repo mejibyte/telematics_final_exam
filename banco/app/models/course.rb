@@ -1,11 +1,20 @@
+#encoding: utf-8
 class Course
+  XML_BUILDER_OPTIONS = { :root => "ei", :skip_types => true }
+  
   def self.xml_for_single_course(id)
-    
+    course = read_hash.select { |c| c["codigo"] == id }.first
+    if course.blank?
+      { :curso => { :status => "error", :mensaje => "No existe un curso con el código '#{id}'" } }.to_xml(XML_BUILDER_OPTIONS)
+    else
+      course["modulos"] = RootlessArray.new(course.delete("modulo"))
+      {:curso => course }.to_xml(XML_BUILDER_OPTIONS)
+    end
   end
   
   def self.xml_for_all_courses
     courses = read_hash.map { |c| { :codigo => c["codigo"], :nombre => c["nombre"], :grupo => groups_for_course(c["codigo"]) } }
-    { :cursos => courses }.to_xml(:root => "ei", :skip_types => true )
+    { :cursos => courses }.to_xml(XML_BUILDER_OPTIONS)
   end
   
   
