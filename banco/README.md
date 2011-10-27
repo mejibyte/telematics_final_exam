@@ -183,6 +183,22 @@ Programación Académica
 Admisiones y Registro
 -----------------
 
-    String login(String username, String password)
-    String consultaEstudiantesPorNombre(String token, String patronNombre)
-    String consultaDatosEstudiante(String token, string codEstudiante)
+* `String login(String username, String password)`
+
+* `String consultaEstudiantesPorNombre(String token, String patronNombre)`
+
+ Implementado en `GET http://host/ar/students/search?name_pattern=:name_pattern`. (`:name_pattern` debe reemplazarse por el patrón del nombre a buscar).
+
+
+ **Ejemplo:** `curl 'http://localhost:3001/ar/students/search?name_pattern=ju'`
+
+   <?xml version="1.0" encoding="UTF-8"?>
+   <ar>
+     <estudiante>
+       <codigo>200910009010</codigo>
+       <nombre>Juan Esteban Perez</nombre>
+     </estudiante>
+   </ar>
+
+
+* `String consultaDatosEstudiante(String token, string codEstudiante)`

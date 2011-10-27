@@ -5,11 +5,20 @@ Banco::Application.routes.draw do
       resources :students
     end
   end
-  
+
   namespace :pa do
     resource :session, :controller => "ei/sessions"
     resources :courses do
       resource :schedule
     end
+  end
+
+  namespace :ar do
+    resource :session, :controller => "ei/sessions"
+    resource :students do
+      collection do
+        get :search
+      end
+    end    
   end
 end
