@@ -205,6 +205,9 @@ Admisiones y Registro
 
 * `String consultaDatosEstudiante(String token, string codEstudiante)`
 
+ Implementado en `GET http://host/ar/students/:id`. (`:id` debe reemplazarse por el código del estudiante).
+
+
   **Ejemplo:** `curl http://localhost:3001/ar/students/200910009010`
 
     <?xml version="1.0" encoding="UTF-8"?>
