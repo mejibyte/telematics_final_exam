@@ -4,6 +4,7 @@ class Course
   
   def self.xml_for_single_course(current_teacher, id)
     course = read_hash.select { |c| c["codigo"] == id }.first
+    course = nil unless current_teacher.has_access_to_course?(course["codigo"])
     if course.blank?
       { :curso => { :status => "error", :mensaje => "No existe un curso con el código '#{id}' o #{current_teacher.name} no es un profesor de este curso." } }.to_xml(XML_BUILDER_OPTIONS)
     else
@@ -14,7 +15,7 @@ class Course
   
   def self.xml_for_all_courses(current_teacher)
     courses = read_hash.map do |c| 
-      { :codigo => c["codigo"], :nombre => c["nombre"], :grupo => groups_for_course(c["codigo"]) } 
+      { :codigo => c["codigo"], :nombre => c["nombre"], :grupo => groups_for_course(c["codigo"]) } if current_teacher.has_access_to_course?(c["codigo"])
     end.compact
     { :cursos => courses }.to_xml(XML_BUILDER_OPTIONS)
   end
