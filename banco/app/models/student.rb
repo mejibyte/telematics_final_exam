@@ -42,6 +42,7 @@ class Student
     student = students.select { |student| student_id == student["codigo"] }.first
     puts student.inspect
     student["cursos"] = (student.delete("cursos") || {"curso" => [] })["curso"]
+    student["cursos"] = [student["cursos"]] unless student["cursos"].is_a?(Array)
     { :estudiante => student }.to_xml(XML_BUILDER_OPTIONS.merge(:root => "ar"))    
   end
 

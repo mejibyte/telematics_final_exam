@@ -78,5 +78,28 @@
         <!-- otros estudiantes -->
     </curso>
     
+    <curso>
+        <codigo>st0666</codigo>
+        <grupo>031</grupo>
+        <estudiante>
+            <codigo>200910009010</codigo>
+            <nombre>Juan Esteban Perez</nombre>
+        </estudiante>
+        <estudiante>
+            <codigo>200220030010</codigo>
+            <nombre>pedro martinez</nombre>
+        </estudiante>
+        <estudiante>
+            <codigo>200245600910</codigo>
+            <nombre>esteban martinez</nombre>
+        </estudiante>
+        <estudiante>
+            <codigo>200810050010</codigo>
+            <nombre>Santiago Achury</nombre>
+        </estudiante>
+        
+        <!-- otros estudiantes -->
+    </curso>
+    
 </ei>
 

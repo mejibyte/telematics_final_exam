@@ -5,3 +5,11 @@
     <li><%= link_to "#{course["codigo"].upcase} - #{course["nombre"]} (Grupo #{course["grupo"]})", course_path(course["codigo"], :group => course["grupo"]) %></li>
   <% end %>
 </ul>
+
+<h2>Buscar un estudiante</h2>
+
+<%= form_tag search_students_path, :method => :get do %>
+  <%= label_tag :name_pattern, "Parte del nombre" %>
+  <%= text_field_tag :name_pattern %>
+  <%= submit_tag "Buscar" %>
+<% end %>

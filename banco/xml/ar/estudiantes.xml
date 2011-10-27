@@ -149,5 +149,20 @@
         </cursos>
     </estudiante>
     
+    <estudiante>
+        <codigo>200810050010</codigo>
+        <nombre>Santiago Achury</nombre>
+        <email>sachurov@eafit.edu.co</email>
+        <telefono>666-77-00</telefono>
+        <cursos>
+            <curso>
+                <codigo>st0666</codigo>
+                <nombre>Rails para Dummies</nombre>
+                <grupo>031</grupo>
+            </curso>
+        </cursos>
+    </estudiante>
+    
+    
 </ar>
 

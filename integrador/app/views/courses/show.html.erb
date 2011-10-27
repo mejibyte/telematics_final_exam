@@ -1,7 +1,7 @@
 <% title course_title(@course) %>
 
 <h2>Contenidos</h2>
-<ul>  
+<ul>
   <% @course["modulo"].each do |mod| %>
     <li>
       <b><%= mod["titulo"] %></b>

@@ -64,4 +64,14 @@
       <url>http://interactiva.eafit.edu.co/1112233/link2</url>
     </modulo>
   </curso>
+  
+  <curso>
+    <codigo>st0666</codigo>
+    <nombre>Rails para Dummies</nombre>
+    <modulo>
+      <titulo>bases matematicas de la computación grafica</titulo>
+      <descripcion>algebra lineal, ecuaciones diferenciales</descripcion>
+      <url>http://interactiva.eafit.edu.co/1112233/link1</url>
+    </modulo>
+  </curso>
 </ei>

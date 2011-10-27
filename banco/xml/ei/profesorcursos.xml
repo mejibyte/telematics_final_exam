@@ -42,5 +42,17 @@
             </curso>
         </cursos>
     </profesor>
+
+
+    <profesor>
+        <username>amejiap3</username>
+        <cursos>
+            <curso>
+                <codigo>st0666</codigo>
+                <grupo>031</grupo>
+                <nombre>Rails para Dummies</nombre>
+            </curso>
+        </cursos>
+    </profesor>    
         
 </ei>

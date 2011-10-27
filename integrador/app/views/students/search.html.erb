@@ -1,0 +1,20 @@
+<% title "Resultados de la búsqueda" %>
+
+<% if @students.empty? %>
+  No hay resultados.
+<% else %>
+  <ul>
+    <% @students.uniq.each do |student| %>
+      <li><%= link_to student["nombre"], student_path(student["codigo"]) %> - <%= student["codigo"] %></li>
+    <% end %>
+  </ul>
+<% end %>
+
+<h3>Realizar nueva búsqueda</h3>
+
+<%= form_tag search_students_path, :method => :get do %>
+  <%= label_tag :name_pattern, "Parte del nombre" %>
+  <%= text_field_tag :name_pattern, params[:name_pattern] %>
+  <%= submit_tag "Buscar" %>
+<% end %>
+

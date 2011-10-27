@@ -8,7 +8,7 @@ class Course
     if course.blank?
       { :curso => { :status => "error", :mensaje => "No existe un curso con el código '#{id}' o #{current_teacher.name} no es un profesor de este curso." } }.to_xml(XML_BUILDER_OPTIONS)
     else
-      course["modulos"] = RootlessArray.new(course.delete("modulo"))
+      course["modulos"] = RootlessArray.new([course.delete("modulo")].flatten)
       {:curso => course }.to_xml(XML_BUILDER_OPTIONS)
     end
   end
