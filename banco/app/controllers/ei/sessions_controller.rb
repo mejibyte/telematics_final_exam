@@ -1,4 +1,6 @@
 class Ei::SessionsController < ApplicationController
+  skip_before_filter :validate_token
+  
   def create
     options = { :skip_types => true, :root => "ei" }
     if token = Authentication.token_from_credentials(params[:username], params[:password])

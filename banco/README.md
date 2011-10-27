@@ -3,6 +3,15 @@ Banco de datos
 
 Ofrece los servicios en una API REST.
 
+Todos los requests (excepto los de autenticación) deben estar acompañados de un parámetro `token` (por ejemplo, `http://host/ei/courses?token=asdf1234`). Cualquier requests que no tenga el parámetro `token` o tenga un `token` inválido será respondido con:
+
+    <?xml version="1.0" encoding="UTF-8"?>
+    <error>
+      <mensaje>Token inválido</mensaje>
+    </error>
+
+En adelante se excluye el parámetro `token` de todos los ejemplos, por simplicidad.
+
 Eafit Interactiva
 -----------------
 

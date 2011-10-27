@@ -1,0 +1,2 @@
+module Ei::CoursesHelper
+end

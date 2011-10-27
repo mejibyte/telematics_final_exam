@@ -1,70 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ei>
-    <curso>
-        <codigo>st0263</codigo>
-        <nombre>Topicos Especiales en Telematica</nombre>
-        <modulo>
-            <titulo>Presentación de Cliente/Servidor</titulo>
-            <descripcion>en esta presentación se dan los conceptos
-                fundamentales en la arquitectura c/s </descripcion>
-            <url>http://interactiva.eafit.edu.co/we2345kjjka/link1</url>
-        </modulo>
-        <modulo>
-            <titulo>Presentación de P2P</titulo>
-            <descripcion>en esta presentación se dan los conceptos
-                fundamentales en la arquitectura p2p </descripcion>
-            <url>http://interactiva.eafit.edu.co/we2345kjjka/link2</url>
-        </modulo>
-    </curso>
-    
-    <curso>
-        <codigo>st0260</codigo>
-        <nombre>Seminario de Ingeniería de Sistemas</nombre>
-        <modulo>
-            <titulo>Introducción a Ingeniería de Sistemas</titulo>
-            <descripcion>conceptos fundamentales de ing de sistemas, introducción a la práctica profesional</descripcion>
-            <url>http://interactiva.eafit.edu.co/123343/link1</url>
-        </modulo>
-        <modulo>
-            <titulo>gestión basico de proyectos</titulo>
-            <descripcion>se introduce las técnicas princilaes de gestion de proyectos</descripcion>
-            <url>http://interactiva.eafit.edu.co/123343/link2</url>
-        </modulo>
-    </curso>
-    
-    <curso>
-        <codigo>st0255</codigo>
-        <nombre>telemática</nombre>
-        <modulo>
-            <titulo>Introducción a redes</titulo>
-            <descripcion>definicion de redes, introduccion al modelo osi</descripcion>
-            <url>http://interactiva.eafit.edu.co/2334/link1</url>
-        </modulo>
-    </curso>
-    
-    <curso>
-        <codigo>st0910</codigo>
-        <nombre>redes LANs</nombre>
-        <modulo>
-            <titulo>Introduccion a las redes LANS</titulo>
-            <descripcion>Ethernet, IEEE 802.3</descripcion>
-            <url>http://interactiva.eafit.edu.co/12345/link1</url>
-        </modulo>
-    </curso>
-    
-    <curso>
-        <codigo>st0278</codigo>
-        <nombre>Computación grafica</nombre>
-        <modulo>
-            <titulo>bases matematicas de la computación grafica</titulo>
-            <descripcion>algebra lineal, ecuaciones diferenciales</descripcion>
-            <url>http://interactiva.eafit.edu.co/1112233/link1</url>
-        </modulo>
-        <modulo>
-            <titulo>animación</titulo>
-            <descripcion>modelos para animación en video</descripcion>
-            <url>http://interactiva.eafit.edu.co/1112233/link2</url>
-        </modulo>
-    </curso>
-    
+  <curso>
+    <codigo>st0263</codigo>
+    <nombre>Topicos Especiales en Telematica</nombre>
+    <modulo>
+      <titulo>Presentación de Cliente/Servidor</titulo>
+      <descripcion>en esta presentación se dan los conceptos fundamentales en la arquitectura c/s</descripcion>
+      <url>http://interactiva.eafit.edu.co/we2345kjjka/link1</url>
+    </modulo>
+    <modulo>
+      <titulo>Presentación de P2P</titulo>
+      <descripcion>en esta presentación se dan los conceptos fundamentales en la arquitectura p2p </descripcion>
+      <url>http://interactiva.eafit.edu.co/we2345kjjka/link2</url>
+    </modulo>
+  </curso>
+
+  <curso>
+    <codigo>st0260</codigo>
+    <nombre>Seminario de Ingeniería de Sistemas</nombre>
+    <modulo>
+      <titulo>Introducción a Ingeniería de Sistemas</titulo>
+      <descripcion>conceptos fundamentales de ing de sistemas, introducción a la práctica profesional</descripcion>
+      <url>http://interactiva.eafit.edu.co/123343/link1</url>
+    </modulo>
+    <modulo>
+      <titulo>gestión basico de proyectos</titulo>
+      <descripcion>se introduce las técnicas princilaes de gestion de proyectos</descripcion>
+      <url>http://interactiva.eafit.edu.co/123343/link2</url>
+    </modulo>
+  </curso>
+
+  <curso>
+    <codigo>st0255</codigo>
+    <nombre>telemática</nombre>
+    <modulo>
+      <titulo>Introducción a redes</titulo>
+      <descripcion>definicion de redes, introduccion al modelo osi</descripcion>
+      <url>http://interactiva.eafit.edu.co/2334/link1</url>
+    </modulo>
+  </curso>
+
+  <curso>
+    <codigo>st0910</codigo>
+    <nombre>redes LANs</nombre>
+    <modulo>
+      <titulo>Introduccion a las redes LANS</titulo>
+      <descripcion>Ethernet, IEEE 802.3</descripcion>
+      <url>http://interactiva.eafit.edu.co/12345/link1</url>
+    </modulo>
+  </curso>
+
+  <curso>
+    <codigo>st0278</codigo>
+    <nombre>Computación grafica</nombre>
+    <modulo>
+      <titulo>bases matematicas de la computación grafica</titulo>
+      <descripcion>algebra lineal, ecuaciones diferenciales</descripcion>
+      <url>http://interactiva.eafit.edu.co/1112233/link1</url>
+    </modulo>
+    <modulo>
+      <titulo>animación</titulo>
+      <descripcion>modelos para animación en video</descripcion>
+      <url>http://interactiva.eafit.edu.co/1112233/link2</url>
+    </modulo>
+  </curso>
 </ei>
