@@ -100,7 +100,7 @@ Eafit Interactiva
     </ei>
   
   
-    `curl http://localhost:3001/ei/courses/st0666`
+`curl http://localhost:3001/ei/courses/st0666`
     
     <?xml version="1.0" encoding="UTF-8"?>
     <ei>
