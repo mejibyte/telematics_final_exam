@@ -10,6 +10,11 @@ class Authentication
     read_hash.map { |u| u["token"] }.compact.include?(some_token)
   end
   
+  def self.teacher_for_token(some_token)
+    attributes = read_hash.map { |u| u if u["token"] == some_token }.compact.first
+    Teacher.new(attributes)
+  end
+  
   private
   
   def self.read_hash

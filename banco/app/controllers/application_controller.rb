@@ -10,4 +10,8 @@ class ApplicationController < ActionController::Base
       render :xml => { :mensaje => "Token inválido" }.to_xml(:root => "error")
     end
   end
+  
+  def current_teacher
+    @current_teacher ||= Authentication.teacher_for_token(params[:token])
+  end
 end

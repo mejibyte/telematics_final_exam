@@ -106,7 +106,7 @@ Eafit Interactiva
     <ei>
       <curso>
         <status>error</status>
-        <mensaje>No existe un curso con el código 'st0666'</mensaje>
+        <mensaje>No existe un curso con el código 'st0666' o Edwin Montoya no es un profesor de este curso.</mensaje>
       </curso>
     </ei>
   
