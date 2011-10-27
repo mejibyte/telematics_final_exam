@@ -194,13 +194,13 @@ Admisiones y Registro
 
  **Ejemplo:** `curl 'http://localhost:3001/ar/students/search?name_pattern=ju'`
 
-   <?xml version="1.0" encoding="UTF-8"?>
-   <ar>
+    <?xml version="1.0" encoding="UTF-8"?>
+    <ar>
      <estudiante>
        <codigo>200910009010</codigo>
        <nombre>Juan Esteban Perez</nombre>
      </estudiante>
-   </ar>
+    </ar>
 
 
 * `String consultaDatosEstudiante(String token, string codEstudiante)`
