@@ -153,7 +153,32 @@ Programación Académica
 
  Exactamente igual al login en EAFIT Interactiva, sólo que la dirección es `POST http://host/pa/session`.
     
-* String getProgramacion(String token, String cursoId, String grupo, String semestre)
+* `String getProgramacion(String token, String cursoId, String grupo, String semestre)`
+
+ Implementado en `GET http://host/pa/courses/:course_id/schedule?group=:group_id&semester=:semester`. (`:course_id` debe reemplazarse por el código del curso, `:group_id` debe reemplazarse por el grupo y `:semester` debe reemplazarse por el semestre. El semestre debe estar en formato "YYYYS" (Año-Semestre), por ejemplo "20101" ó "20112" pero nunca "2010-1" ó "20113").
+
+ **Ejemplo:** 
+ `curl 'http://localhost:3001/pa/courses/st0260/schedule?group=032&semester=20112'`
+
+   <?xml version="1.0" encoding="UTF-8"?>
+   <pa>
+     <programacion>
+       <codigo>st0260</codigo>
+       <grupo>032</grupo>
+       <evaluacion>
+         <tipo>parcial</tipo>
+         <porcentaje>70</porcentaje>
+         <fecha>2011-09-27</fecha>
+       </evaluacion>
+       <evaluacion>
+         <tipo>trabajo</tipo>
+         <porcentaje>30</porcentaje>
+         <fecha>2011-10-20</fecha>
+       </evaluacion>
+     </programacion>
+   </pa>
+
+
 
 Admisiones y Registro
 -----------------
