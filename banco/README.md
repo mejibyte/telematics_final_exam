@@ -73,7 +73,7 @@ Eafit Interactiva
  
 * `String getContenidosCursos(String token, String cursoId)`
 
-  Implementado en `GET http://host/ei/courses/:id`. (`:id` debe reemplazarse por el código del grupo)
+  Implementado en `GET http://host/ei/courses/:id`. (`:id` debe reemplazarse por el código del curso)
   
   **Ejemplo:**
   
@@ -110,7 +110,41 @@ Eafit Interactiva
       </curso>
     </ei>
   
-    String getListaClase(String token, String cursoId, String grupo)
+* `String getListaClase(String token, String cursoId, String grupo)`
+
+  Implementado en `GET http://host/ei/courses/:course_id/students?group=:group_id`. (`:course_id` debe reemplazarse por el código del curso y `:group_id` debe reemplazarse por el grupo).
+  
+  **Ejemplo:** `curl http://localhost:3001/ei/courses/st0263/students?group=031`
+  
+  Respuesta:
+  
+    <?xml version="1.0" encoding="UTF-8"?>
+    <ei>
+      <curso>
+        <codigo>st0263</codigo>
+        <grupo>031</grupo>
+        <estudiante>
+          <codigo>200910009010</codigo>
+          <nombre>Juan Esteban Perez</nombre>
+        </estudiante>
+        <estudiante>
+          <codigo>201010008010</codigo>
+          <nombre>Luis Javier Henao</nombre>
+        </estudiante>
+      </curso>
+    </ei>
+
+  Con un token de un profesor que no tenga acceso a la materia:
+  
+  `curl http://localhost:3001/ei/courses/st0263/students?group=031&token=123hhdj`
+
+    <?xml version="1.0" encoding="UTF-8"?>
+    <ei>
+      <curso>
+        <status>error</status>
+        <mensaje>Juan Carlos Montoya no es un profesor de este curso.</mensaje>
+      </curso>
+    </ei>
 
 Programación Académica
 -----------------
