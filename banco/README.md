@@ -15,13 +15,24 @@ Eafit Interactiva
 
   Respuesta:
 
-      <?xml version="1.0" encoding="UTF-8"?>
-      <ei>
-        <autenticacion>
-          <status>ok</status>
-          <token>r4nd0mn3ss</token>
-        </autenticacion>
-      </ei>
+    <?xml version="1.0" encoding="UTF-8"?>
+    <ei>
+      <autenticacion>
+        <status>ok</status>
+        <token>r4nd0mn3ss</token>
+      </autenticacion>
+    </ei>
+    
+
+ `curl -d username=amejiap3 -d password=invalid http://localhost:3001/ei/session`
+
+    <?xml version="1.0" encoding="UTF-8"?>
+    <ei>
+      <autenticacion>
+        <status>error</status>
+        <token nil="true"></token>
+      </autenticacion>
+    </ei>
 
 
 *
