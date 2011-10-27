@@ -202,3 +202,30 @@ Admisiones y Registro
 
 
 * `String consultaDatosEstudiante(String token, string codEstudiante)`
+
+  **Ejemplo:** `curl http://localhost:3001/ar/students/200910009010`
+
+    <?xml version="1.0" encoding="UTF-8"?>
+    <ar>
+      <estudiante>
+        <codigo>200910009010</codigo>
+        <nombre>Juan Esteban Perez</nombre>
+        <email>jperez@eafit.edu.co</email>
+        <telefono>311-14-23</telefono>
+        <cursos>
+          <curso>
+            <codigo>st0263</codigo>
+            <nombre>tópicos especiales en telemática</nombre>
+            <grupo>031</grupo>
+          </curso>
+          <curso>
+            <codigo>st0278</codigo>
+            <nombre>computación gráfica</nombre>
+            <grupo>031</grupo>
+          </curso>
+        </cursos>
+      </estudiante>
+    </ar>
+  
+  
+  
