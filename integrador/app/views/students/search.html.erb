@@ -5,7 +5,7 @@
 <% else %>
   <ul>
     <% @students.uniq.each do |student| %>
-      <li><%= link_to student["nombre"], student_path(student["codigo"]) %> - <%= student["codigo"] %></li>
+      <li><%= link_to "#{student["codigo"]} - #{student["nombre"]}", student_path(student["codigo"]) %></li>
     <% end %>
   </ul>
 <% end %>

@@ -9,15 +9,15 @@
   </head>
   <body>
     <div id="container">
-      <% flash.each do |name, msg| %>
-        <%= content_tag :div, msg, :id => "flash_#{name}" %>
-      <% end %>
-      
       <%= link_to_unless_current "Página principal", dashboard_path %>
       <% if logged_in? %>
         | <%= link_to "Salida segura", session_path(:id => "user"), :method => :delete %>
       <% end %>
-      
+
+      <% flash.each do |name, msg| %>
+        <%= content_tag :div, msg, :id => "flash_#{name}" %>
+      <% end %>
+
       <%= content_tag :h1, yield(:title) if show_title? %>
       <%= yield %>
     </div>
