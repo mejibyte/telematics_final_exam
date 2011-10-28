@@ -1,7 +1,8 @@
 body {
-  background-color: #4B7399;
+  background-color: #FFFFFF;
   font-family: Verdana, Helvetica, Arial;
   font-size: 14px;
+  color: #006;
 }
 
 a img {
@@ -9,7 +10,12 @@ a img {
 }
 
 a {
-  color: #0000FF;
+  color: #00C;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .clear {
@@ -21,15 +27,16 @@ a {
 #container {
   width: 75%;
   margin: 0 auto;
-  background-color: #FFF;
+  background-color: #EEE;
   padding: 20px 40px;
-  border: solid 1px black;
+  border: solid 1px #CCC;
   margin-top: 20px;
 }
 
 #flash_notice, #flash_error, #flash_alert {
   padding: 5px 8px;
   margin: 10px 0;
+  color: black;
 }
 
 #flash_notice {
@@ -72,4 +79,55 @@ a {
 
 .error_messages ul {
   margin: 0;
+}
+
+#header {
+  text-align: right;
+  font-weight: bold;
+}
+
+table.r {
+  margin: auto;
+  border: 1px solid #999999;  
+  border-collapse: collapse;
+}
+
+table td.v {
+  padding: 2px 5px;
+  text-align: left;
+  border: 1px solid #cccccc;
+}
+
+table th.r, table td.r {
+  padding: 2px 5px;
+  text-align: center;
+  border: 1px solid #cccccc;
+}
+
+table th.r {
+  color: inherit;
+  background-color: #e8e8e8;
+}
+
+table tr.odd {
+  color: inherit;
+  background-color: #f8f8f8;
+}
+
+table tr.even {
+  color: inherit;
+  background-color: #f0f0f0;
+}
+
+table tr.highlight {
+  color: inherit;
+  background-color: #ccffbb;
+}
+table tr.error {
+  color: inherit;
+  background-color: #f8f8f8;
+}
+
+tt {
+  font-size: 1.2em;
 }

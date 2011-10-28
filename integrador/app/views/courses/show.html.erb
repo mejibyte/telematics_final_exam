@@ -17,22 +17,27 @@
   <% end %>
 </ul>
 
+
 <h3>Lista de estudiantes</h3>
 
-<ul>  
-  <% @students.sort_by { |s| s["nombre"] }.each do |student| %>
-    <li>
-      <%= link_to "#{student["codigo"]} - #{student["nombre"]}", student_path(student["codigo"]) %>
-    </li>
-  <% end %>
-</ul>
+<%= render "students/students", :collection => @students %>
 
 <h3>Programación semestre <%= current_semester %></h3>
 
-<ul>
+<table class="r">
+  <tr>
+    <th class="r">Actividad</th>
+    <th class="r">Porcentaje</th>
+    <th class="r">Fecha</th>
+    <th class="r"></th>
+  </tr>
+
   <% @schedule.each do |event| %>
-    <li>
-      <b><%= event["tipo"].titleize %>:</b> (<%= event["porcentaje"] %>%) <%= l Date.parse(event["fecha"]) , :format => :long %> (<%= date_distance(Date.parse(event["fecha"])) %>)
-    </li>
+    <tr class="<%= cycle('odd', 'even') %>">
+      <td class="r"><b><%= event["tipo"].titleize %></b></td>
+      <td class="r"><%= event["porcentaje"] %>%</td>
+      <td class="r"><%= l Date.parse(event["fecha"]) , :format => :long %></td>
+      <td class="r"><%= date_distance(Date.parse(event["fecha"])) %></td>
+    </tr>
   <% end %>
-</ul>
+</table>

@@ -9,10 +9,14 @@
   </head>
   <body>
     <div id="container">
-      <%= link_to_unless_current "Página principal", dashboard_path %>
-      <% if logged_in? %>
-        | <%= link_to "Salida segura", session_path(:id => "user"), :method => :delete %>
-      <% end %>
+      <div id="header">
+        <%= link_to_unless_current "Página principal", dashboard_path %>
+        <% if logged_in? %>
+          | <%= link_to "Salida segura", session_path(:id => "user"), :method => :delete %>
+        <% end %>
+      </div>
+
+      <hr />
 
       <% flash.each do |name, msg| %>
         <%= content_tag :div, msg, :id => "flash_#{name}" %>

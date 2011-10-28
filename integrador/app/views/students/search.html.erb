@@ -3,11 +3,7 @@
 <% if @students.empty? %>
   No hay resultados.
 <% else %>
-  <ul>
-    <% @students.uniq.each do |student| %>
-      <li><%= link_to "#{student["codigo"]} - #{student["nombre"]}", student_path(student["codigo"]) %></li>
-    <% end %>
-  </ul>
+  <%= render "students", :collection => @students %>
 <% end %>
 
 <h3>Realizar nueva búsqueda</h3>

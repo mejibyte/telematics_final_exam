@@ -14,8 +14,18 @@
 
 <h2>Cursos en los que este estudiante está inscrito</h2>
 
-<ul>
+<table class="r">
+  <tr>
+    <th class="r">Código</th>
+    <th class="r">Nombre</th>
+    <th class="r">Grupo</th>
+  </tr>
+
   <% @student["cursos"]["curso"].each do |course| %>
-    <li><%= link_to "#{course["codigo"].upcase} - #{course["nombre"]} (Grupo #{course["grupo"]})", course_path(course["codigo"], :group => course["grupo"]) %></li>
+    <tr class="<%= cycle('odd', 'even') %>">
+      <td class="r"><%= course["codigo"].upcase %></td>
+      <td class="r"><%= course["nombre"] %></td>
+      <td class="r"><%= link_to course["grupo"], course_path(course["codigo"], :group => course["grupo"]) %></td>
+    </tr>
   <% end %>
-</ul>
+</table>
