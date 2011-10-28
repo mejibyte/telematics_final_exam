@@ -25,19 +25,13 @@ class Student
     
     students = Hash.from_xml(File.read(Rails.root.join("xml/ar/estudiantes.xml")))["ar"]["estudiante"]
     students = students.collect do |student|
-      if current_teacher.has_access_to_student?(student["codigo"])
-        { :codigo => student["codigo"], :nombre => student["nombre"] } if student["nombre"] =~ /.*#{name_pattern}.*/i
-      end
+      { :codigo => student["codigo"], :nombre => student["nombre"] } if student["nombre"] =~ /.*#{name_pattern}.*/i
     end.compact.uniq
     
     { :estudiante => RootlessArray.new(students) }.to_xml(XML_BUILDER_OPTIONS.merge(:root => "ar"))
   end
 
   def self.xml_for_single_student(current_teacher, student_id)
-    unless current_teacher.has_access_to_student?(student_id)
-      return { :curso => { :status => "error", :mensaje => "#{current_teacher.name} no tiene acceso a este estudiante." } }.to_xml(XML_BUILDER_OPTIONS.merge(:root => "ar"))
-    end
-
     students = Hash.from_xml(File.read(Rails.root.join("xml/ar/estudiantes.xml")))["ar"]["estudiante"]
     student = students.select { |student| student_id == student["codigo"] }.first
     puts student.inspect

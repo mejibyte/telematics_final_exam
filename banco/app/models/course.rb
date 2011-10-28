@@ -4,9 +4,12 @@ class Course
   
   def self.xml_for_single_course(current_teacher, id)
     course = read_hash.select { |c| c["codigo"] == id }.first
-    course = nil unless current_teacher.has_access_to_course?(course["codigo"])
     if course.blank?
-      { :curso => { :status => "error", :mensaje => "No existe un curso con el código '#{id}' o #{current_teacher.name} no es un profesor de este curso." } }.to_xml(XML_BUILDER_OPTIONS)
+      return { :curso => { :status => "error", :mensaje => "No existe un curso con el código '#{id}'." } }.to_xml(XML_BUILDER_OPTIONS)
+    end
+    
+    unless current_teacher.has_access_to_course?(course["codigo"])
+      { :curso => { :status => "error", :mensaje => "#{current_teacher.name} no tiene acceso al curso #{course["codigo"]}." } }.to_xml(XML_BUILDER_OPTIONS)
     else
       course["modulos"] = RootlessArray.new([course.delete("modulo")].flatten)
       {:curso => course }.to_xml(XML_BUILDER_OPTIONS)
