@@ -24,6 +24,10 @@ a:hover {
   overflow: hidden;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+}
+
 #container {
   width: 75%;
   margin: 0 auto;
@@ -81,6 +85,10 @@ a:hover {
   margin: 0;
 }
 
+.center {
+  text-align: center;
+}
+
 #header {
   text-align: right;
   font-weight: bold;
@@ -130,4 +138,13 @@ table tr.error {
 
 tt {
   font-size: 1.2em;
+}
+
+#search_results {
+  padding: 10px;
+}
+
+.spinner {
+  padding-top: 10px;
+  display:  none;
 }

@@ -1,6 +1,6 @@
 module CoursesHelper
-  def course_title(course)
-    "#{course["codigo"].upcase} - #{course["nombre"]}"
+  def course_title(course, group)
+    "#{course["codigo"].upcase} - #{course["nombre"]} - Grupo #{group}"
   end
   
   def current_semester

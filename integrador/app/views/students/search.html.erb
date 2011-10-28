@@ -1,10 +1,8 @@
 <% title "Resultados de la búsqueda" %>
 
-<% if @students.empty? %>
-  No hay resultados.
-<% else %>
-  <%= render "students", :collection => @students %>
-<% end %>
+<div id="search_results">
+  <%= render "results" %>
+</div>
 
 <h3>Realizar nueva búsqueda</h3>
 

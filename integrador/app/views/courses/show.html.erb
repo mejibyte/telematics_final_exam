@@ -1,8 +1,6 @@
-<% title course_title(@course) %>
+<% title course_title(@course, params[:group]) %>
 
-<h2>Grupo <%= params[:group] %></h2>
-
-<h3>Contenidos</h3>
+<h2>Contenidos</h2>
 <ul>
   <% @course["modulo"].each do |mod| %>
     <li>
@@ -18,11 +16,11 @@
 </ul>
 
 
-<h3>Lista de estudiantes</h3>
+<h2>Lista de estudiantes</h2>
 
 <%= render "students/students", :collection => @students %>
 
-<h3>Programación semestre <%= current_semester %></h3>
+<h2>Programación semestre <%= current_semester %></h2>
 
 <table class="r">
   <tr>

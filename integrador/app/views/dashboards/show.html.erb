@@ -18,8 +18,17 @@
 
 <h2>Buscar un estudiante</h2>
 
-<%= form_tag search_students_path, :method => :get do %>
-  <%= label_tag :name_pattern, "Parte del nombre" %>
-  <%= text_field_tag :name_pattern %>
-  <%= submit_tag "Buscar" %>
-<% end %>
+<div class="center">
+  <%= form_tag search_students_path, :method => :get, :remote => true, :id => "search_students_form" do %>
+    <%= label_tag :name_pattern, "Parte del nombre" %>
+    <%= text_field_tag :name_pattern %>
+    <%= submit_tag "Buscar" %>
+  <% end %>
+
+  <div class="spinner">
+    <%= image_tag "spinner.gif" %>
+  </div>
+
+  <div id="search_results">
+  </div>
+</div>
