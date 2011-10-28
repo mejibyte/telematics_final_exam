@@ -7,4 +7,6 @@ Integrador::Application.routes.draw do
       get :search
     end
   end
+  
+  root :to => "dashboards#show"
 end

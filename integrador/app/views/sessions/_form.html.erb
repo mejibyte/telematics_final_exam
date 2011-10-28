@@ -1,13 +1,15 @@
+<div class="center">
 <%= form_tag sessions_path do %>
-  <p>
-    <%= label_tag :username %><br />
+  <div>
+    <%= label_tag :username, "Nombre de usuario" %><br />
     <%= text_field_tag :username %>
-  </p>
+  </div>
 
-  <p>
-    <%= label_tag :password %><br />
+  <div>
+    <%= label_tag :password, "Contraseña" %><br />
     <%= password_field_tag :password %>
-  </p>  
+  </div>  
   
-  <p><%= submit_tag "Log in" %></p>
+  <p><%= submit_tag "Identificarse" %></p>
 <% end %>
+</div>
