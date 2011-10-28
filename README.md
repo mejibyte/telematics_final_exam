@@ -35,3 +35,8 @@ En seguida se accede desde el navegador a `localhost:3000`, ¡y listo! Se deber�
 
 
 Los archivos XML utilizados por el banco se encuentran en `banco/xml`, en caso de que se deseen modificar para hacer pruebas.
+
+Documentación de la API REST
+----------------------------
+
+Disponible en línea en https://github.com/andmej/telematics_final_exam/blob/master/banco/README.md.
